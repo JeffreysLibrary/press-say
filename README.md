@@ -1,2 +1,2 @@
-# pess-say
+# press-say
 This application is for those non-speaking or those with speaking disabilities. 
