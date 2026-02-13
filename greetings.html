@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Press & Say</title>
+
+
+<style> 
+
+.mainmenu { 
+display: flex; 
+color:white;
+background-color:black;
+font-size:30px;
+} 
+
+.mainmenu > div { 
+flex: 1;
+margin: 10px;
+}
+
+.mainmenu:hover {
+cursor:pointer;	
+}
+
+
+.menu { 
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr;
+margin:20px;
+font-size:30px;
+} 
+
+
+.menu:hover {
+cursor:pointer;	
+}
+
+.selection:hover {
+text-decoration:underline;	
+}
+
+.mainSelection:hover {
+text-decoration:underline;
+color:white;	
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<div id="container">
+
+<div class="mainmenu">
+<div id="Greetings" class="mainSelection">Greetings</div>
+<div id="Feelings" class="mainSelection">Feelings</div>
+<div id="Food" class="mainSelection">Food</div>
+<div id="Activity" class="mainSelection">Activity</div>
+</div>
+
+
+<div class="menu">
+<div id="hello" class="selection">Hello</div>
+<div id="howAreYou" class="selection">How are you?</div>
+</div>
+
+<div class="menu">
+<div id="thankyou" class="selection">Thank you</div>
+<div id="youreWelcome" class="selection">You're welcome</div>
+</div>
+
+<div class="menu">
+
+<div id="coldOut" class="selection">It's cold out.</div>
+<div id="rainyOut" class="selection">It's raining.</div>
+<div id="niceOut" class="selection">It's nice out.</div>
+</div>
+
+<script src="greetings.js">
+</script>
+
+</div>
+
+</body>
+</html>
