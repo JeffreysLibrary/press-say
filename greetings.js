@@ -6,6 +6,8 @@ let e =document.getElementById("coldOut");
 let f =document.getElementById("rainyOut");
 let g =document.getElementById("niceOut");
 
+
+
 a.addEventListener("click", thankyouGo);
 b.addEventListener("click", helloGo);
 c.addEventListener("click", howAreYouGo);
@@ -13,6 +15,7 @@ d.addEventListener("click", youreWelcomeGo)
 e.addEventListener("click", coldOutGo);
 f.addEventListener("click", rainyOutGo);
 g.addEventListener("click", niceOutGo);
+
 
 
 function play(file) { 
