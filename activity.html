@@ -12,6 +12,7 @@
 display: flex; 
 color:white;
 background-color:black;
+font-size:30px;
 } 
 
 .mainmenu > div { 
@@ -25,16 +26,33 @@ cursor:pointer;
 
 
 .menu { 
-display: flex; 
+display: grid; 
+grid-template-columns: 1fr 1fr;
+margin:20px;
+gap:20px;
+font-size:30px;
 } 
 
-.menu > div { 
-flex: 1;
-margin: 10px;
-}
 
 .menu:hover {
 cursor:pointer;	
+}
+
+.selection:hover {
+text-decoration:underline;	
+}
+
+.mainSelection:hover {
+text-decoration:underline;
+color:white;	
+}
+
+a {
+text-decoration:none;	
+}
+
+a:visited {
+color:white;	
 }
 
 </style>
@@ -45,30 +63,44 @@ cursor:pointer;
 
 <body>
 
+<div id="container">
+
 <div class="mainmenu">
-<div id="Greetings">Greetings</div>
-<div id="Feelings">Feelings</div>
-<div id="Food">Food</div>
-<div id="Acitivity">Activity</div>
+<div id="Greetings" class="mainSelection"><a href="greetings.html">Greetings</a></div>
+<div id="Feelings" class="mainSelection"><a href="feelings.html">Feelings</a></div>
+<div id="Food" class="mainSelection"><a href="food.html">Food</a></div>
+<div id="Activity" class="mainSelection"><a href="activity.html">Activity</a></div>
+</div>
+
+
+<div class="menu">
+<div id="walk" class="selection">I'm going for a walk.</div>
+<div id="tv" class="selection">I'm going to watch TV</div>
 </div>
 
 <div class="menu">
-<div id="happy">Happy</div>
-<div id="sad">Sad</div>
-<div id="hungry">Hungry</div>
-<div id="angry">Angry</div>
+<div id="boardgame" class="selection">Let's play a board game.</div>
+<div id="eatOut" class="selection">Let's eat out.</div>
 </div>
 
 <div class="menu">
-<div id="thanks">Thank You</div>
-<div id="Hello">Hello</div>
-<div id="thirsty">Thirsty</div>
-<div id="play">You're welcome</div>
+<div id="work" class="selection">I need to get to work.</div>
+<div id="break" class="selection">I'm taking a break.</div>
 </div>
 
+<div class="menu">
+<div id="chores" class="selection">I have some chores.</div>
+<div id="movies" class="selection">Let's go to the movies.</div>
+</div>
 
-<script src="press.js">
+<div class="menu">
+<div id="park" class="selection">I'm going to the park.</div>
+</div>
+
+<script src="activity.js">
 </script>
+
+</div>
 
 </body>
 </html>
